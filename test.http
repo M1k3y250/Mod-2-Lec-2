@@ -1,0 +1,14 @@
+### Test GET - formulario de registro
+GET http://localhost:5000/
+
+### Test POST - datos válidos
+POST http://localhost:5000/
+Content-Type: application/x-www-form-urlencoded
+
+name=Juan+Perez&email=juan%40gmail.com&password=segura123
+
+### Test POST - datos inválidos
+POST http://localhost:5000/
+Content-Type: application/x-www-form-urlencoded
+
+name=Al&email=correo_invalido&password=123
